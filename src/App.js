@@ -9,6 +9,14 @@ import About from "./pages/About/About";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const stored = localStorage.getItem("isLoggedIn");
+
+    if (stored === "1") {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   const loginHandler = (email, password) => {
     // Proverite email i password ovde
     // Ali ovo je samo demo
