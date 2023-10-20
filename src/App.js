@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Login from "./components/Login/Login";
 import Home from "./pages/Home/Home";
 import MainHeader from "./components/MainHeader/MainHeader";
@@ -20,6 +20,7 @@ function App() {
   const loginHandler = (email, password) => {
     // Proverite email i password ovde
     // Ali ovo je samo demo
+    localStorage.setItem("isLoggedIn", "1");
     setIsLoggedIn(true);
   };
 
