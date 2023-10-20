@@ -28,4 +28,7 @@ const Navigation = (props) => {
   );
 };
 
+// koristi NavLink za navbar navigaciju sa rutama ?>
+// zbog toga sto ima active i pending sto pomaze pri css editingu
+
 export default Navigation;
