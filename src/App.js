@@ -5,6 +5,7 @@ import MainHeader from "./components/MainHeader/MainHeader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./pages/Products/Products";
 import About from "./pages/About/About";
+import Posts from "./pages/Posts/Posts";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -46,6 +47,7 @@ function App() {
           />
           <Route path="/about-us" element={<About />}></Route>
           <Route path="/products" element={<Products />}></Route>
+          <Route path="/posts" element={<Posts />}></Route>
         </Routes>
       </>
     </Router>
