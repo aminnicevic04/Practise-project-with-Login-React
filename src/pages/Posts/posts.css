@@ -1,0 +1,16 @@
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px;
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pagination img {
+  width: 40px;
+  height: 40px;
+}
