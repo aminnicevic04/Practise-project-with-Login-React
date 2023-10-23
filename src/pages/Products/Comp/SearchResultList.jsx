@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchresultList.css";
 
 function SearchResultsList({ results }) {
   console.log(results);
@@ -8,22 +9,22 @@ function SearchResultsList({ results }) {
         return (
           <div className="artikli" key={product.id}>
             <img src={product.images[0]}></img>
-            <h1>
+            <h3>
               <label>Brand: </label>
               {product.brand}
-            </h1>
-            <h1>
+            </h3>
+            <h3>
               <label>Category: </label>
               {product.category}
-            </h1>
-            <h1>
+            </h3>
+            <h3>
               <label>Description: </label>
               {product.description}
-            </h1>
-            <h1>
+            </h3>
+            <h3>
               <label>Price: </label>
               {product.price}$
-            </h1>
+            </h3>
           </div>
         );
       })}

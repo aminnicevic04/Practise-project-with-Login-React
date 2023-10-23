@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./pages/Products/Products";
 import About from "./pages/About/About";
 import Posts from "./pages/Posts/Posts";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -49,6 +50,7 @@ function App() {
           <Route path="/products" element={<Products />}></Route>
           <Route path="/posts" element={<Posts />}></Route>
         </Routes>
+        <Footer />
       </>
     </Router>
   );

@@ -4,6 +4,7 @@
   justify-content: space-around;
   padding: 20px;
   margin-top: 50px;
+  min-height: 100vh;
 }
 .pagination {
   width: 100%;
