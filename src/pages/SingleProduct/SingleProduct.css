@@ -1,0 +1,7 @@
+.main-Products {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}

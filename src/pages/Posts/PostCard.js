@@ -25,14 +25,14 @@ function PostCard({ posts }) {
   const navigate = useNavigate();
 
   return (
-    <div className="post" onClick={() => navigate(`/posts${posts.id}`)}>
+    <div className="post">
       <div className="naslov">
         <h1>
           <span className="keys">{posts.title}</span>
         </h1>
       </div>
       <div className="body">
-        <h3>
+        <h3 onClick={() => navigate(`/posts/${posts.id}`)}>
           <span className="keys">{posts.body}</span>
         </h3>
       </div>

@@ -9,7 +9,11 @@ function SearchResultsList({ results }) {
     <div className="page">
       {results?.products?.map((product) => {
         return (
-          <div className="artikli" key={product.id}>
+          <div
+            className="artikli"
+            key={product.id}
+            onClick={() => navigate(`/products/${product.id}`)}
+          >
             <img src={product.images[0]}></img>
             <h3>
               <label>Brand: </label>

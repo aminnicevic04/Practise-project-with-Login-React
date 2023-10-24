@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "./SinglePost.css";
 
 function SinglePost() {
   const { id } = useParams();
-  console.log(id);
-  return <div>{id}</div>;
+  return <div className="main-posts">dsadsadsa {id}</div>;
 }
 
 export default SinglePost;
