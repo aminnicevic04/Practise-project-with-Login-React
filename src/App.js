@@ -7,6 +7,8 @@ import Products from "./pages/Products/Products";
 import About from "./pages/About/About";
 import Posts from "./pages/Posts/Posts";
 import Footer from "./components/Footer/Footer";
+import SinglePost from "./pages/SinglePost/SinglePost";
+import SingleProduct from "./pages/SingleProduct/SingleProduct";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -49,6 +51,8 @@ function App() {
           <Route path="/about-us" element={<About />}></Route>
           <Route path="/products" element={<Products />}></Route>
           <Route path="/posts" element={<Posts />}></Route>
+          <Route path="/posts/:id" element={<SinglePost />}></Route>
+          <Route path="/products/:id" element={<SingleProduct />}></Route>
         </Routes>
         <Footer />
       </>

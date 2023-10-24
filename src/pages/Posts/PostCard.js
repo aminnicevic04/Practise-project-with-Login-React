@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Slika from "./slika.png";
 import "./postCard.css";
 
@@ -21,8 +22,10 @@ function PostCard({ posts }) {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
-    <div className="post">
+    <div className="post" onClick={() => navigate(`/posts${posts.id}`)}>
       <div className="naslov">
         <h1>
           <span className="keys">{posts.title}</span>

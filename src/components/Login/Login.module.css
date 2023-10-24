@@ -1,7 +1,10 @@
 /* * {
   font-size: 62.5%;
 } */
-
+.Wrapper {
+  width: 100%;
+  min-height: 58vh;
+}
 .login {
   width: 90%;
   max-width: 40rem;

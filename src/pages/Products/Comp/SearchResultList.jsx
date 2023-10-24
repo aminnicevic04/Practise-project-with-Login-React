@@ -1,7 +1,9 @@
 import React from "react";
 import "./SearchresultList.css";
+import { useNavigate } from "react-router-dom";
 
 function SearchResultsList({ results }) {
+  const navigate = useNavigate();
   console.log(results);
   return (
     <div className="page">

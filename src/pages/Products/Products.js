@@ -4,6 +4,7 @@ import SearchBar from "./Comp/SearchBar";
 import SearchResultsList from "./Comp/SearchResultList";
 function Products() {
   const [results, setResults] = useState([]);
+  
 
   return (
     <div className="App">
