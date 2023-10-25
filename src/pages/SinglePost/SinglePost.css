@@ -4,4 +4,18 @@
   padding-top: 200px;
   display: flex;
   justify-content: center;
+  background: linear-gradient(60deg, purple, #616cbc, #3a63bb, purple);
+  background-size: 500%;
+  animation: gradientaAnimation 5s ease infinite;
+}
+@keyframes gradientaAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

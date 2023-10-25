@@ -1,9 +1,59 @@
 .home {
   width: 90%;
   max-width: 40rem;
-  min-height: 100vh;
+  min-height: 30vh;
   padding: 3rem;
   margin: 2rem auto;
   text-align: center;
-  margin-top: 100px;
+  background-color: transparent;
+  box-shadow: none;
+  display: block;
+}
+.wrapper {
+  min-width: 99vw;
+  min-height: 100vh;
+  background-color: blue;
+  padding-top: 60px;
+  background-image: url("https://ld-wp.template-help.com/wordpress_prod-14027/main/wp-content/uploads/2017/11/propromote-img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h33 {
+  height: 5rem;
+  /* background-color: blue; */
+  position: relative;
+  transform: translateY(130px);
+  color: white;
+  font-size: 50px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  position: relative;
+  /* margin: auto; */
+  left: -6.5rem;
+  top: -4rem;
+}
+#col1 {
+  color: purple;
+  text-transform: uppercase;
+  font-size: 70px;
+  position: relative;
+  left: -6rem;
+  top: 2dvh;
+}
+#col2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 70px;
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+}
+#col3 {
+  color: purple;
+  text-transform: uppercase;
+  font-size: 70px;
+  position: relative;
+  top: 0.5rem;
+  left: 10rem;
 }
