@@ -23,6 +23,15 @@ function SinglePost() {
       <div className="post-card">
         <h1>{singlePostData.title}</h1>
         <h3>{singlePostData.body}</h3>
+        {singlePostData.tags && singlePostData.tags.length > 0 && (
+          <div className="tags">
+            {singlePostData.tags.map((tag, index) => (
+              <span key={index} className="tag">
+                # {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

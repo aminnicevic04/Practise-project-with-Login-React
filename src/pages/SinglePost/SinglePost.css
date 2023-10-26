@@ -4,21 +4,32 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 10px;
-  width: 30rem;
-  height: auto;
-  border: 2px solid black;
+  width: 40rem;
+  height: 30rem;
+  /* border: 2px solid black; */
+  margin-bottom: 5vh;
 }
 .post-card h1 {
   margin: 0;
+  text-align: center;
 }
 .post-card h3 {
   margin: 0;
+  text-align: center;
+}
+.tags {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+  /* background-color: #fff; */
+  width: 100%;
+  /* font-size: 20px; */
 }
 
 .main-posts {
   width: 100%;
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 120px;
   display: flex;
   justify-content: center;
   background: linear-gradient(60deg, purple, #616cbc, #3a63bb, purple);
