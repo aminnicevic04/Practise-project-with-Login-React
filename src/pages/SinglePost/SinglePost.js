@@ -1,10 +1,31 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./SinglePost.css";
 
 function SinglePost() {
   const { id } = useParams();
-  return <div className="main-posts">{id}</div>;
+  const [singlePostData, setsinglePostData] = useState([]);
+  useEffect(() => {
+    fetch(`https://dummyjson.com/posts/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setsinglePostData(data);
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Greška prilikom dobijanja podataka:", error);
+      });
+  }, []);
+
+  return (
+    <div className="main-posts">
+      <div className="post-card">
+        <h1>{singlePostData.title}</h1>
+        <h3>{singlePostData.body}</h3>
+      </div>
+    </div>
+  );
 }
 
 export default SinglePost;

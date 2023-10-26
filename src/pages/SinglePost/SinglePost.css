@@ -1,3 +1,20 @@
+.post-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  width: 30rem;
+  height: auto;
+  border: 2px solid black;
+}
+.post-card h1 {
+  margin: 0;
+}
+.post-card h3 {
+  margin: 0;
+}
+
 .main-posts {
   width: 100%;
   min-height: 100vh;
