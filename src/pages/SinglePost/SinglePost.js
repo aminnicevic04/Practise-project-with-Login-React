@@ -5,7 +5,7 @@ import "./SinglePost.css";
 
 function SinglePost() {
   const { id } = useParams();
-  const [singlePostData, setsinglePostData] = useState([]);
+  const [singlePostData, setsinglePostData] = useState({});
   useEffect(() => {
     fetch(`https://dummyjson.com/posts/${id}`)
       .then((res) => res.json())
