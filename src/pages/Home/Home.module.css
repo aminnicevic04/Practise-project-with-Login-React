@@ -32,6 +32,7 @@
   /* margin: auto; */
   left: -6.5rem;
   top: -4rem;
+  z-index: 1;
 }
 #col1 {
   color: purple;
@@ -40,6 +41,7 @@
   position: relative;
   left: -6rem;
   top: 2dvh;
+  z-index: 1;
 }
 #col2 {
   color: white;
@@ -48,6 +50,7 @@
   position: relative;
   left: 2rem;
   top: 1rem;
+  z-index: 1;
 }
 #col3 {
   color: purple;
@@ -56,4 +59,5 @@
   position: relative;
   top: 0.5rem;
   left: 10rem;
+  z-index: 1;
 }

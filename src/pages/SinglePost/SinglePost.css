@@ -32,7 +32,13 @@
   padding-top: 120px;
   display: flex;
   justify-content: center;
-  background: linear-gradient(60deg, purple, #616cbc, #3a63bb, purple);
+  background: linear-gradient(
+    60deg,
+    rgb(4, 4, 4),
+    #e8e9f3,
+    #040404,
+    blueviolet
+  );
   background-size: 500%;
   animation: gradientaAnimation 5s ease infinite;
 }

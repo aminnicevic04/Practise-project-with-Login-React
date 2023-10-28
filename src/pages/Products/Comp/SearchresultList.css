@@ -20,12 +20,11 @@
   margin-bottom: 20px;
 }
 .artikli img {
-  mix-blend-mode: multiply;
   margin-top: 20px;
   width: 150px;
   height: 100px;
   /* border-radius: 100px; */
 }
 .artikli label {
-  color: rgb(45, 120, 185);
+  color: blueviolet;
 }

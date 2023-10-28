@@ -9,6 +9,7 @@
 .nav li {
   margin: 0;
   margin-left: 2rem;
+  font-size: 1.2rem;
 }
 
 .nav a {
@@ -23,13 +24,18 @@
 
 .nav button {
   font: inherit;
-  background: #dd0db0;
-  border: 1px solid #dd0db0;
+  background: rgba(0, 0, 0, 0.26);
   padding: 0.5rem 1.5rem;
-  color: white;
+  color: blueviolet;
+  background-color: white;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
   border-radius: 20px;
+  border: none;
+  font-size: 0.9rem;
+  padding-top: 12 px;
+  /* text-transform: lowercase; */
+  width: 100px;
 }
 
 .nav button:focus {
@@ -38,6 +44,13 @@
 
 .nav button:hover,
 .nav button:active {
-  color: #f3cafb;
+  color: white;
+  background-color: blueviolet;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+  transition: 0.7s;
+  border: none;
+}
+.nav li,
+h1 {
+  cursor: pointer;
 }

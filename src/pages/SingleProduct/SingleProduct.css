@@ -4,4 +4,44 @@
   padding-top: 200px;
   display: flex;
   justify-content: center;
+  background-color: #0f0e17;
+}
+.productLeft {
+  background-color: transparent;
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  color: white;
+  padding-left: 17rem;
+}
+.productLeft h1 {
+  margin-bottom: 60px;
+  /* color: blueviolet; */
+  padding-left: 10rem;
+}
+.keys {
+  color: blueviolet;
+}
+.productLeft h3 {
+  margin-top: 40px;
+}
+.zeleno {
+  color: greenyellow;
+}
+.yell {
+  color: yellow;
+}
+.productRight {
+  width: 30vw;
+  height: 50vh;
+  position: absolute;
+  right: 9rem;
+  top: 15rem;
+  background-color: #fff;
+}
+.productRight img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }

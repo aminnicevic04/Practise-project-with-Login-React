@@ -7,9 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #741188;
+  background-color: blueviolet;
   padding: 0 2rem;
   margin-bottom: 100px;
+  z-index: 2;
 }
 
 .main-header h1 {

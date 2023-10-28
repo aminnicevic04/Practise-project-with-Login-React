@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from "react";
 
 import classes from "./Navigation.module.css";
 import { useNavigate } from "react-router-dom";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 const Navigation = (props) => {
   const navigate = useNavigate();
@@ -25,7 +27,10 @@ const Navigation = (props) => {
         )}
         {props.isLoggedIn && (
           <li>
-            <button onClick={props.onLogout}>Logout</button>
+            <Button onClick={props.onLogout} variant="outlined">
+              Logout
+            </Button>
+            {/* <button onClick={props.onLogout}>Logout</button> */}
           </li>
         )}
       </ul>

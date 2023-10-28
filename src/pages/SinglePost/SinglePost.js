@@ -7,7 +7,7 @@ function SinglePost() {
   const { id } = useParams();
   const [singlePostData, setsinglePostData] = useState({});
   useEffect(() => {
-    fetch(`https://dummyjson.com/posts/${id}`)
+    fetch(`http://dummyjson.com/posts/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setsinglePostData(data);
