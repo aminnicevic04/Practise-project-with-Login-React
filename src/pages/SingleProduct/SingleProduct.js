@@ -6,66 +6,64 @@ import axios from "axios";
 
 function SingleProduct() {
   const { id } = useParams();
-  const [SingleProductData, setSingleProductData] = useState({});
-  const getDataProducts = () => {
-    axios
-      .get(`http://dummyjson.com/products/${id}`)
-      .then((res) => {
-        setSingleProductData(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => alert("Error fetching data:", error));
-  };
+  const [singleProductData, setSingleProductData] = useState({});
   useEffect(() => {
-    getDataProducts();
-  }, []);
+    const getDataProducts = async () => {
+      try {
+        const response = await axios.get(`http://dummyjson.com/products/${id}`);
+        setSingleProductData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-  // const bgcProduct = SingleProductData.images[0];
-  // const styleRight = {
-  //   width: "330px",
-  //   height: "50vh",
-  //   position: "absolute",
-  //   right: "9rem",
-  //   top: "15rem",
-  //   backgroundColor: "#fff",
-  //   backgroundImage: `url(${bgcProduct})`,
-  //   backgroundSize: "cover",
-  //   backgroundPosition: "center",
-  // };
+    getDataProducts();
+  }, [id]);
+  const loading = false;
 
   return (
     <div className="main-Products">
-      <div className="productLeft">
-        <h1>{SingleProductData.title}</h1>
-        <h3>
-          <span className="keys">Title : </span>
-          {SingleProductData.description}
-        </h3>
-        <h3>
-          <span className="keys">Rating : </span>
-          {SingleProductData.rating}
-        </h3>
-        <h3>
-          <span className="keys">On Stock : </span>
-          {SingleProductData.stock}
-        </h3>
-        <h3>
-          <span className="keys">Price : </span>
-          {SingleProductData.price}
-          <span className="zeleno"> $</span>
-        </h3>
-        <h3>
-          Register and get
-          <span className="yell">
-            {" "}
-            {SingleProductData.discountPercentage}
-          </span>{" "}
-          % on this product !!!
-        </h3>
-      </div>
-      <div className="productRight">
-        {/* <img src={SingleProductData.images[2]}></img> */}
-      </div>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+          <div className="productLeft">
+            <h1>{singleProductData.title}</h1>
+            <h3>
+              <span className="keys">Title : </span>
+              {singleProductData.description}
+            </h3>
+            <h3>
+              <span className="keys">Rating : </span>
+              {singleProductData.rating}
+            </h3>
+            <h3>
+              <span className="keys">On Stock : </span>
+              {singleProductData.stock}
+            </h3>
+            <h3>
+              <span className="keys">Price : </span>
+              {singleProductData.price}
+              <span className="zeleno"> $</span>
+            </h3>
+            <h3>
+              Register and get
+              <span className="yell">
+                {" "}
+                {singleProductData.discountPercentage}
+              </span>{" "}
+              % on this product !!!
+            </h3>
+          </div>
+          <div className="productRight">
+            {singleProductData.images && singleProductData.images[1] ? (
+              <img src={singleProductData.images[0]} alt="Product" />
+            ) : (
+              <p>No Image Available</p>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }
