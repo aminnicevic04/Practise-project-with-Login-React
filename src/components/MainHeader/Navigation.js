@@ -12,11 +12,6 @@ const Navigation = (props) => {
       <ul>
         {props.isLoggedIn && (
           <li>
-            <a onClick={() => navigate("/about-us")}>About</a>
-          </li>
-        )}
-        {props.isLoggedIn && (
-          <li>
             <a onClick={() => navigate("/products")}>Products</a>
           </li>
         )}

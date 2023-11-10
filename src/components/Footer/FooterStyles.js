@@ -8,7 +8,7 @@ export const Box = styled.div`
   //   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 20%;
+  min-height: 21%;
 
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -21,7 +21,8 @@ export const FooterContainer = styled.div`
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  //   background: red;
+  // background: red;
+  height: 24vh;
 `;
 
 export const Column = styled.div`
